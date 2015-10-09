@@ -1,0 +1,43 @@
+shen9175@TOSHIBA:~/practice/QueryParser$ ./Query test.txt
+Now process the file: test.txt:
+enter word to look for, or q to quit: Daddy
+Executing Query for: Daddy
+Daddy occurs 3 times
+	(line 2)Her Daddy says when the wind blows
+	(line 7)"Daddy, shush, there is no such thing,"
+	(line 10)Shyly, she asks, "I mean, Daddy, is there?"
+enter word to look for, or q to quit: ~Alice
+Executing Query for: ~(Alice)
+~(Alice) occurs 9 times
+	(line 2)Her Daddy says when the wind blows
+	(line 3)through her hair, it looks almost alive,
+	(line 4)like a fiery bird in flight.
+	(line 5)A beautiful fiery bird, he tells her,
+	(line 6)magical but untamed.
+	(line 7)"Daddy, shush, there is no such thing,"
+	(line 8)she tells him, at the same time wanting
+	(line 9)him to tell her more.
+	(line 10)Shyly, she asks, "I mean, Daddy, is there?"
+enter word to look for, or q to quit: hair|Alice
+Executing Query for: (hair | Alice)
+(hair | Alice) occurs 2 times
+	(line 1)Alice Emma has long flowing red hair.
+	(line 3)through her hair, it looks almost alive,
+enter word to look for, or q to quit: hair&Alice
+Executing Query for: (hair & Alice)
+(hair & Alice) occurs 1 time
+	(line 1)Alice Emma has long flowing red hair.
+enter word to look for, or q to quit: fiery&bird|wind
+Executing Query for: ((fiery & bird) | wind)
+((fiery & bird) | wind) occurs 3 times
+	(line 2)Her Daddy says when the wind blows
+	(line 4)like a fiery bird in flight.
+	(line 5)A beautiful fiery bird, he tells her,
+enter word to look for, or q to quit: fiery&(bird|wind)
+Executing Query for: (fiery & (bird | wind))
+(fiery & (bird | wind)) occurs 2 times
+	(line 4)like a fiery bird in flight.
+	(line 5)A beautiful fiery bird, he tells her,
+enter word to look for, or q to quit: q
+shen9175@TOSHIBA:~/practice/QueryParser$ 
+
